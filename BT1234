@@ -1,0 +1,17 @@
+import os
+cwd = os.getcwd()
+print (cwd)
+def current_path(): 
+    print(os.getcwd()) 
+    print()
+print("Current working directory before") 
+current_path()
+os.chdir('D:/data')
+print("Current working directory after") 
+current_path()
+#Tạo thư mục:
+directory = "nnlt2"
+parent_dir = "D:/data"
+path = os.path.join(parent_dir, directory)
+os.makedirs(path) 
+print("Directory '% s' created" % directory)
