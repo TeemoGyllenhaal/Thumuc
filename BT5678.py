@@ -18,3 +18,9 @@ print(tontai)
 path = r'D:\yamero'
 tontai= os.path.exists(path)
 print(tontai)
+#Xóa thư mục
+directory = "nnlt2"
+parent_dir = "D:/data"
+path = os.path.join(parent_dir, directory)
+os.rmdir(path)
+print("Directory '% s' removed" % directory)
