@@ -1,4 +1,4 @@
-def mo_va_viet_tep_tin_nhi_phan()
+def mo_va_viet_tep_tin_nhi_phan():
     f = open(r'D:\data\While.drawio.png','r+b')
     with open(r'D:\data\While.drawio.png','r+b') as f:
         print(f.read(1))
