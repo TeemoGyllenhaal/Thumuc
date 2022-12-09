@@ -1,9 +1,16 @@
+#1
 #Đọc văn bản
-f = open(r'D:\data\hjhj.txt','r')
-z = f.read()
-print (z)
+def doc_van_ban(x):
+    f = open(x,'r')
+    z = f.read()
+    print (z)
+doc_van_ban(r'D:\data\hjhj.txt')
+#2
 #Ghi văn bản
-with open(r'D:\data\hjhj.txt','a') as f:
-    f.write("huhu\n")
-    f.write("yameroo\n")
-f.close()
+def ghi_van_ban(x):
+    with open(x,'a') as f:
+        f.write('\n')
+        f.write("huhu\n")
+        f.write("yameroo\n")
+        f.close()
+ghi_van_ban(r'D:\data\hjhj.txt')
